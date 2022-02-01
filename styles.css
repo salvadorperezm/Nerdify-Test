@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Libre Baskerville", serif;
+}
+
+/* General styling */
+h1 {
+  font-size: 2rem;
+  line-height: 3;
+}
+
+h2 {
+  line-height: 2;
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+
+a {
+  font-family: "Libre Baskerville", serif;
+}
+
+.main-container {
+  height: 100vh;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+span {
+  font-size: 2rem;
+}
+
+strong {
+  display: block;
+}
+
+.main-links {
+  margin-top: 1rem;
+}
+
+.main-links li {
+  list-style: none;
+  width: 40%;
+  text-align: center;
+  line-height: 5;
+  margin-right: 2rem;
+}
+
+.main-links li:last-of-type {
+  margin-right: none;
+}
+
+.main-links a {
+  display: inline-block;
+  width: 100%;
+
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #000;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Grid and flexbox layout */
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "header  header"
+    "main    aside"
+    "footer  footer";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+main,
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-links {
+  display: flex;
+}
