@@ -90,14 +90,13 @@ aside {
   align-items: center;
 }
 
-.links {
+.links,
+.links a {
   display: flex;
   justify-content: space-between;
 }
 
 .links a {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
