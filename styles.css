@@ -1,25 +1,41 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html {
   font-family: "Libre Baskerville", serif;
+  box-sizing: border-box;
 }
 
 /* General styling */
 .main-container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100vh;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h1,
+h2,
+p {
+  margin-bottom: 1rem;
+}
+
+span {
+  font-size: 2rem;
 }
 
 .links {
   list-style: none;
 }
 
-.links li {
+.links li,
+.neo-features > i {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -27,6 +43,16 @@ html {
   padding: 1rem;
   text-decoration: none;
   color: #000;
+}
+
+.links a i {
+  margin: 0 1rem;
+}
+
+.neo-features > i {
+  border-radius: 30px;
+  padding: 0.8rem;
+  margin-right: 1.5rem;
 }
 
 /* Grid and flexbox layout */
@@ -71,5 +97,10 @@ aside {
 .links a {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.neo-features-container {
+  display: flex;
   align-items: center;
 }
